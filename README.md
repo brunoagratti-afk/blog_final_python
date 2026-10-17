@@ -31,5 +31,9 @@ La aplicación consiste en un blog web donde los usuarios pueden registrarse, in
 
 ### 1. Clonar el repositorio
 
+## Repositorio
+
+https://github.com/brunoagratti-afk/blog_final_python
+
 ```bash
-git clone URL_DEL_REPOSITORIO
+git clone https://github.com/brunoagratti-afk/blog_final_python.git
