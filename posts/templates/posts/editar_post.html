@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}
+Editar post
+{% endblock %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+  <div class="col-lg-7">
+
+    <div class="card shadow-sm">
+      <div class="card-body">
+
+        <h2 class="mb-4">
+          Editar publicación
+        </h2>
+
+        <form method="POST" enctype="multipart/form-data">
+
+          {% csrf_token %}
+
+          {{ form.as_p }}
+
+          <button type="submit" class="btn btn-primary">
+            Guardar cambios
+          </button>
+
+          <a
+            href="{% url 'detalle_post' post.id %}"
+            class="btn btn-secondary"
+          >
+            Cancelar
+          </a>
+
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
